@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const SecondaryNav = ({ activeLink, setActiveLink }) => {
-  // console.log(activeLink);
   const handleChange = (e) => {
     e.preventDefault();
     const linkName = e.target.getAttribute("data-name");
@@ -24,7 +23,6 @@ const SecondaryNav = ({ activeLink, setActiveLink }) => {
             <li
               data-name="upvoted"
               onClick={(e) => handleChange(e)}
-              // className="hover:text-saucyRed transition-all duration-300 mr-3 sm:mr-11"
               className={`${
                 activeLink === "upvoted" ? "bg-cheesyYellow rounded-xl text-grey " : " "
               } hover:text-saucyRed transition-all duration-300 mr-3 p-2 sm:mr-11`}
@@ -34,7 +32,6 @@ const SecondaryNav = ({ activeLink, setActiveLink }) => {
             <li
               data-name="discussed"
               onClick={(e) => handleChange(e)}
-              // className="hover:text-saucyRed transition-all duration-300 mr-3 sm:mr-11"
               className={`${
                 activeLink === "discussed" ? "bg-cheesyYellow rounded-xl text-grey " : " "
               } hover:text-saucyRed transition-all duration-300 mr-3 p-2 sm:mr-11`}
@@ -44,7 +41,6 @@ const SecondaryNav = ({ activeLink, setActiveLink }) => {
             <li
               data-name="recent"
               onClick={(e) => handleChange(e)}
-              // className="hover:text-saucyRed  transition-all duration-300 mr-3 sm:mr-11"
               className={`${
                 activeLink === "recent" ? "bg-cheesyYellow rounded-xl text-grey " : " "
               } hover:text-saucyRed transition-all duration-300 mr-3 p-2 sm:mr-11`}
