@@ -1,7 +1,5 @@
 import { useState } from "react";
 import LayoutToggle from "./LayoutToggle";
-import PostGrid from "./PostGrid.jsx";
-import PostList from "./PostList.jsx";
 import postData from "../data/hot.json";
 import Modal from "../components/Modal";
 import SecondaryNav from "./SecondaryNav";
