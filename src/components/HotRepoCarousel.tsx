@@ -60,9 +60,81 @@ const hotRepo = [
       "https://avatars.githubusercontent.com/u/22990146?s=60&v=4",
     ],
   },
+  {
+    id: 3,
+    organization: "FreeCodeCamp",
+    orgImg: "https://avatars.githubusercontent.com/u/9892522?s=200&v=4",
+    name: "FreeCodeCamp",
+    description: "freeCodeCamp.org's open-source codebase and curriculum. Learn to code for free.",
+    upvoted: false,
+    issues: "16k",
+    stars: "350k",
+    PR: "30k",
+    img: [
+      "https://avatars.githubusercontent.com/u/1884376?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/25180681?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/544954?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/15801806?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/18572518?s=64&v=4",
+    ],
+  },
+  {
+    id: 4,
+    organization: "VueJs",
+    orgImg: "https://avatars.githubusercontent.com/u/6128107?s=200&v=4",
+    name: "Vue",
+    description: "Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+    upvoted: false,
+    issues: "9.7k",
+    stars: "198k",
+    PR: "2.2k",
+    img: [
+      "https://avatars.githubusercontent.com/u/499550?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/664177?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/72989?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/4620458?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/2883231?s=64&v=4",
+    ],
+  },
+  {
+    id: 5,
+    organization: "Flutter",
+    orgImg: "https://avatars.githubusercontent.com/u/14101776?s=200&v=4",
+    name: "Flutter",
+    description: "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+    upvoted: false,
+    issues: "60k",
+    stars: "143k",
+    PR: "36.4k",
+    img: [
+      "https://avatars.githubusercontent.com/u/8975114?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/551196?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/1269969?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/351029?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/15253456?s=60&v=4",
+    ],
+  },
+  {
+    id: 6,
+    organization: "The Algorithms",
+    orgImg: "https://avatars.githubusercontent.com/u/20487725?s=200&v=4",
+    name: "Python",
+    description: "All Algorithms implemented in Python",
+    upvoted: false,
+    issues: "1k",
+    stars: "140k",
+    PR: "5.1k",
+    img: [
+      "https://avatars.githubusercontent.com/u/3709715?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/14276147?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/24757020?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/67177269?s=64&v=4",
+      "https://avatars.githubusercontent.com/u/14369357?s=64&v=4",
+    ],
+  },
 ];
 
-const HotRepositories = () => {
+const HotRepositoriesCarousel = () => {
   const [hotRepos, setHotRepos] = useState(hotRepo);
 
   const handleVoted = (id: number) => {
@@ -79,7 +151,7 @@ const HotRepositories = () => {
       </div>
       <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full my-5">
         {hotRepos.map((repo) => (
-          <div key={repo.id} className="p-4 border rounded-lg bg-white w-[30rem] space-y-1 relative">
+          <div key={repo.id} className="p-4 border rounded-lg bg-white w-full space-y-1 relative">
             {/* header & upvote button */}
             <div className="flex justify-between w-full">
               <div className="flex space-x-1 items-center">
@@ -139,4 +211,4 @@ const HotRepositories = () => {
   );
 };
 
-export default HotRepositories;
+export default HotRepositoriesCarousel;
