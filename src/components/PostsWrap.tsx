@@ -9,6 +9,7 @@ import useSupabaseAuth from "../hooks/useSupabaseAuth";
 import locationsHash from "../lib/locationsHash";
 import { useLocation, useSearchParams } from "react-router-dom";
 import HotRepositories from "./HotRepositories";
+import HotRepositoriesCarousel from "./HotRepoCarousel";
 
 interface PostWrapProps {
   textToSearch: string;
@@ -54,7 +55,8 @@ const PostsWrap = ({ textToSearch }: PostWrapProps): JSX.Element => {
     <div className="bg-darkestGrey">
       <Modal />
       <SecondaryNav activeLink={activeLink} user={user} />
-      <HotRepositories />
+      {/* <HotRepositories /> */}
+      <HotRepositoriesCarousel />
       <LayoutToggle gridState={isGrid} setGridState={setIsGrid} />
       <div className="bg-darkestGrey py-6 w-full min-h-screen">
         {isGrid ? (
