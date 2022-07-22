@@ -5,6 +5,32 @@
 
 > All notable changes to this project will be documented in this file
 
+## [2.11.0-beta.1](https://github.com/open-sauced/hot-sauce/compare/v2.10.0...v2.11.0-beta.1) (2022-07-22)
+
+
+### 🍕 Features
+
+* UI v3 nav ([#210](https://github.com/open-sauced/hot-sauce/issues/210)) ([7a8a003](https://github.com/open-sauced/hot-sauce/commit/7a8a003b2f5c2a2d405e05a0747de16088aa08ec))
+
+
+### 🧑‍💻 Code Refactoring
+
+* correct some ignored tooling rules ([095091c](https://github.com/open-sauced/hot-sauce/commit/095091c0696398b6551f08de995c5ab7214ac46b))
+
+## [2.9.0-beta.4](https://github.com/open-sauced/hot-sauce/compare/v2.9.0-beta.3...v2.9.0-beta.4) (2022-07-19)
+
+
+### 🍕 Features
+
+* UI v3 nav ([#210](https://github.com/open-sauced/hot-sauce/issues/210)) ([7a8a003](https://github.com/open-sauced/hot-sauce/commit/7a8a003b2f5c2a2d405e05a0747de16088aa08ec))
+
+## [2.10.0](https://github.com/open-sauced/hot-sauce/compare/v2.9.0...v2.10.0) (2022-07-22)
+
+
+### 🍕 Features
+
+* **submissions:** send submissions to Discord ([#212](https://github.com/open-sauced/hot-sauce/issues/212)) ([d5cc958](https://github.com/open-sauced/hot-sauce/commit/d5cc958a3e2509f0c4aa939ccb79bc7fef40799c)), closes [#211](https://github.com/open-sauced/hot-sauce/issues/211)
+
 ## [2.9.0](https://github.com/open-sauced/hot-sauce/compare/v2.8.2...v2.9.0) (2022-07-18)
 
 
